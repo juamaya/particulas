@@ -1,80 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
 
-h1 {
+section {
+  background-color: rgb(53, 53, 38);
+  width: 100%;
+  height: 1200px;
   margin-top: 20px;
-  padding: 20px;
-  text-align: center;
-  color:white;
+  opacity: 0.8;
 }
 
- 
-
-p{
-  margin-top: 10px;
-  padding: 10px;
-  text-align: center;
-  color:white;
-  opacity: .3;
-
+.nav-link:hover {
+  color: rgb(39, 243, 28);
 }
-.padres{
+.separador {
+  height: 100px;
+}
+.home {
+  background-image: url(../images/puente.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: unset;
+  height: 100vh;
+}
+
+.about {
+  background-image: url(../images/boreal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: unset;
+  height: 100vh;
+}
+
+.services {
+  background-image: url(../images/montañas.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: unset;
+}
+
+.jobs {
+  background-image: url(../images/ciudad.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: unset;
+}
+.contact {
+  height: 120vh;
+}
+
+.btn-send {
+  color: black;
+}
+
+.btn-send:hover {
+  background-color: blue;
+  color: white;
+}
+
+.card {
+  background-color: rgb(62, 53, 69);
+
+  width: 600px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.fa-solid {
+  color: blue;
+  margin-right: 15px;
+}
+
+.redes-sociales {
   margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: "roboto", arial, helvetica, sans-serif;
+  font-size: 2rem;
 }
-.gatos{
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.redes-sociales i {
+  margin-right: 20px;
+  color: blue;
+  font-size: 5rem;
 }
-.container{
-  margin: 10px;
-  display: grid;
- 
- 
 
+.redes-sociales i:hover {
+  background-color: blue;
+  color: white;
+  font-size: 5rem;
 }
-.superheroinas{
- 
-border-radius: 50%;
+.wave {
+  opacity: 0.5;
+}
+.footer {
+  margin-top: 40px;
 }
 
 #particles-js {
-  background: rgb(13, 14, 58);
   position: fixed;
   width: 100%;
-  height: 200%;
+  height: 100%;
   top: 0;
   z-index: -1;
 }
 
-
-footer{
-  text-align: center;
-  color: white;
-}
-
-@media screen and (max-width: 768px){
-  .gatos{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-  
-  
+@media screen and (max-width: 900px) {
+  .separador {
+    height: 350px;
   }
-  img{
 
-    margin-bottom: 15px;
+  .accordion {
+    width: 90%;
   }
-  
-}
+  .carousel-item {
+    height: 300px;
+  }
 
- 
+  .services {
+    height: 3000px;
+  }
+
+  .sidebar {
+    height: 500px;
+    background-color: rgba(44, 40, 40, 0.95);
+  }
+  .nav-item{
+    margin-top: 15px;
+  }
+  .card {
+    min-width: 80%;
+  }
+}
