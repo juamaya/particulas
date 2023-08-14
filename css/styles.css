@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  background-color: rgb(53, 53, 38);
+  background-color:black;
  
   margin-top: 20px;
   opacity: 0.8;
@@ -144,6 +144,14 @@ section {
   .carousel-item {
     height: 300px;
   }
+  .home {
+    height: 150vh;
+  }
+
+  .about {
+    height: 150vh;
+  }
+
   .services {
     height: 200vh;
   }
@@ -153,7 +161,7 @@ section {
   }
 
   .contact {
-    height: 150vh;
+    height: 200vh;
   }
 
 
